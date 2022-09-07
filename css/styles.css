@@ -1,48 +1,60 @@
 :root {
+ --primary-black-color:#000000;
+ --hero-black-color:#2f303a;
   --primary-text-color: #212121;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --our-team-white:#f5f4fa;
+  --primary-grey-color:#757575;
 }
 body {
   font-family: Roboto, sans-serif, Raleway;
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
+  background-color:var(--primary-white-color);
+  color:var(--primary-text-color);
   letter-spacing: 0.3em;
   font-size: 14px;
 }
 
 .header {
-  background: var(--primary-white-color);
+  background:var(--primary-white-color);
 }
 .links:hover,
 .links:focus {
-  color: var(--accent-color);
+  color:var(--accent-color);
 }
 .contacts:hover,
 .contacts:focus {
-  color: var(--accent-color);
+  color:var(--accent-color);
 }
 .links {
-  color: var(--primary-text-color);
+  color:var(--primary-text-color);
 }
 .contacts {
-  color: #757575;
+  color:var(--primary-grey-color);
+}
+.link-current{
+color:var(--accent-color);
+}
+.list-nav,
+.contacts-nav{
+  list-style: none;
 }
 
 .links,
-.contacts {
+.contacts,
+.link-current {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
   text-decoration: none;
-  list-style: none;
+ 
 }
 
 .hero {
-  background: #2f303a;
+  background:var(--hero-black-color);
 }
 .slogan {
   font-weight: 900;
@@ -56,18 +68,19 @@ body {
 }
 .slogan-button:hover,
 .slogan-button:focus {
-  background: #188ce8;
+  background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
 .slogan-button {
   cursor: pointer;
-  background: #2196f3;
+ 
+ background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-family: inherit;
-  font-style: normal;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -94,13 +107,13 @@ body {
   color: var(--primary-text-color);
 }
 .details {
-  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
-  color: #757575;
+  color:var(--primary-grey-color);
 }
-
+.team{ 
+  background:var(--our-team-white);
+}
 .directions {
   font-weight: 700;
   font-size: 36px;
@@ -109,14 +122,14 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
-  background: #f5f4fa;
+  /* background: #f5f4fa; */
 }
 
 .olga,
 .igor,
 .mykola,
 .myhailo {
-  background: #ffffff;
+  background:var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -137,16 +150,17 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color:var(--primary-grey-color);
+ 
 }
 .footer {
-  background: #2f303a;
+  background: var(--hero-black-color);
 }
 .web {
   color: var(--accent-color);
 }
 .studio {
-  color: #000000;
+  color:var(--primary-black-color);
 }
 .studio-bottom {
   color: var(--primary-white-color);
@@ -175,7 +189,7 @@ body {
 .tel,
 .email {
   font-style: normal;
-  font-weight: 400;
+
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -190,17 +204,13 @@ body {
   color: var(--primary-white-color);
 }
 /* окремі свойства portfolio */
-.visually-hidden {
-  position: fixed;
-  transform: scale(0);
+.visually-hidden{
+  position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px;
 }
-.nav-buttons {
-  list-style: none;
-}
-.nav-projects {
-  list-style: none;
-}
-.nav-footer {
+
+.nav-buttons,
+.nav-projects,
+.nav-footer{
   list-style: none;
 }
 
@@ -210,10 +220,10 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  color: #ffffff;
+    color:var(--primary-white-color);
 }
 .nav-button {
-  /* border: none; */
+
   border-color: transparent;
   cursor: pointer;
   font-family: inherit;
@@ -224,7 +234,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #2f303a;
+  color: var(--hero-black-color);
 }
 .project {
   font-weight: 700;
@@ -238,5 +248,5 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: #757575;
+  color:var(--primary-grey-color);
 }
